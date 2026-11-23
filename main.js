@@ -2,24 +2,19 @@
  * YOUR CODE GOES RIGHT HERE! *
  ******************************/
 
-function fizzy(num){
+function fizzy(num) {
+  // Check "both" first: once that case has returned, the next checks don't
+  // need to rule it out again.
   if (num % 3 === 0 && num % 5 === 0) {
-    return "FizzBuzz";
-  } else if (num % 3 === 0 && num % 5 != 0) {
-    return "Fizz";
-  } else if (num % 3 != 0 && num % 5 === 0) {
-    return "Buzz";
+    return 'FizzBuzz';
+  } else if (num % 3 === 0) {
+    return 'Fizz';
+  } else if (num % 5 === 0) {
+    return 'Buzz';
   } else {
     return num;
   }
 }
-
-
-
-
-
-
-
 
 /**********************************
  *      OUR CODE GOES BELOW.      *
